@@ -138,13 +138,16 @@
   },
   ".CodeMirror.vim-mode.insert-mode textarea": {
     "escape": "vim-mode:exit-insert-mode",
+    "ctrl-[": "vim-mode-exit-insert-mode",
     "ctrl-w": "vim-mode:delete-to-beginning-of-word"
   },
   ".CodeMirror.vim-mode.replace-mode textarea": {
-    "escape": "vim-mode:exit-insert-mode"
+    "escape": "vim-mode:exit-insert-mode",
+    "ctrl-[": "vim-mode:exit-insert-mode"
   },
   ".CodeMirror.vim-mode.visual-mode textarea": {
     "escape": "vim-mode:exit-visual-mode",
+    "ctrl-[": "vim-mode:exit-visual-mode",
     "\"": "vim-mode:register-prefix",
     "I": "vim-mode:insert-at-start-of-target",
     "A": "vim-mode:insert-at-end-of-target",
